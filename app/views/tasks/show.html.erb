@@ -1,0 +1,8 @@
+<h2><%if @task.completed?%>
+      ✔
+      <%else%>
+      ◻
+      <%end%>
+      <%= @task.title %>
+</h2>
+<h4><%= @task.details%></h4>
