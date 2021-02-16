@@ -1,3 +1,6 @@
+<div class="button">
+      <%= link_to ' edit this task', edit_task_path(@task)%>
+</div>
 <h2><%if @task.completed?%>
       ✔
       <%else%>
@@ -6,3 +9,7 @@
       <%= @task.title %>
 </h2>
 <h4><%= @task.details%></h4>
+<div class="button">
+      <i class="fas fa-redo"></i>
+      <%= link_to ' back', tasks_path%>
+</div>
