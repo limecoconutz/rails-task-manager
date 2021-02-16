@@ -10,12 +10,32 @@ $button_hover:  #75ffda;
 $text_hover: #110590;
 
 body{
-  background-color: $background;
+  background-image: url('https://images.unsplash.com/photo-1532958808832-aae08f887875?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-position: center;
   font-family: 'Source Sans Pro', sans-serif;
-  color: $text;
+  color: $background;
+  .container{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: $background;
+    color: $text;
+  }
+
+  form{
+    margin: 15px;
+  }
+
   a{
     text-decoration: none;
-    color: $text;
+    color: $background;
+    background-color: $buttons;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    border: solid 1px $text;
   }
   .button a{
     background-color: $buttons;

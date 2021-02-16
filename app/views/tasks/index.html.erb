@@ -1,14 +1,16 @@
 <h1>Here are all the tasks</h1>
-<ul>
-  <%@tasks.each do |task| %>
-      <li><%if task.completed?%>
-      ✔
-      <%else%>
-      ⬜
-      <%end%>
-      <%= link_to task.title, task_path(task) %>
-      <%end%>
-</ul>
-<div class=button>
-<%= link_to  "Create task",  new_task_path%>
+<div class="container">
+  <ul>
+    <%@tasks.each do |task| %>
+        <li><%if task.completed?%>
+        ✔
+        <%else%>
+        ⬜
+        <%end%>
+        <%= link_to task.title, task_path(task) %>
+        <%end%>
+  </ul>
+  <div class=button>
+        <%= link_to  "Create task",  new_task_path%>
+  </div>
 </div>
