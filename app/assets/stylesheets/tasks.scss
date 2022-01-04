@@ -30,12 +30,6 @@ body{
 
   a{
     text-decoration: none;
-    color: $background;
-    background-color: $buttons;
-    margin: 5px;
-    padding: 3px;
-    border-radius: 5px;
-    border: solid 1px $text;
   }
   .button a{
     background-color: $buttons;
